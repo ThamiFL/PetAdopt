@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Pet Adopt</title>
   </head>
+
+  <!---------------------------------------------------------------->
 
   <body>
     <header>
       <img src="./assets/Logo.png" alt="Logo de Adote" />
       <button class="botaoAdote">Adote</button>
     </header>
+
     <!---------------------------------------------------------------->
+
     <main>
       <section class="banner">
         <article>
@@ -24,11 +34,144 @@
               ativas.
             </p>
           </div>
-          <img id="fotoGrande" src="./assets/scooby.png" alt=" Foto do Pet para adoção">
+          <img
+            id="fotoGrande"
+            src="./assets/scooby.png"
+            alt=" Foto do Pet para adoção"
+          />
         </article>
-      </section>
-    </main>
 
+        <section class="galeria">
+
+          <div class="pet">
+            <img class="imgPet"
+              src="./assets/scooby.png"
+              alt="Cachorro médio amarelo e branco"
+            />
+            <h2 class="nome">Scooby</h2>
+            <p class="descricaopet">
+              Scooby é um cão leal e protetor. Ama crianças e é muito obediente.
+              Precisa de espaço para correr e brincar. Ideal para famílias
+              ativas.
+            </p>
+          </div>
+
+          <div class="pet">
+            <img
+              class="imgPet"
+              src="./assets/pantera.png"
+              alt="Imagem de um gato todo preto"
+            />
+            <h2 class="nome">Pantera</h2>
+            <p class="descricaopet">
+              Pantera é uma gatinha carinhosa e brincalhona. Ela adora carinho e
+              é muito sociável com outros gatos. Procura uma família que lhe dê
+              muito amor e atenção.
+            </p>
+          </div>
+
+          <div class="pet">
+            <img
+              class="imgPet"
+              src="./assets/thor.png"
+              alt="Cachorro médio com pelos amarelos"
+            />
+            <h2 class="nome">Thor</h2>
+            <p class="descricaopet">
+              Thor é um cão cheio de energia e lealdade. Adora brincar e estar
+              perto da família, sempre demonstrando carinho e proteção. Procura
+              um lar onde possa receber amor e ter bastante espaço para gastar
+              sua energia.
+            </p>
+          </div>
+
+          <div class="pet">
+            <img
+              class="imgPet"
+              src="./assets/garfield.png"
+              alt="Gato laranja"
+            />
+            <h2 class="nome">Garfield</h2>
+            <p class="descricaopet">
+              Garfield é um gato independente mas carinhoso. Gosta de explorar e
+              é muito curioso. Ideal para quem quer um companheiro aventureiro.
+            </p>
+          </div>
+
+        </section>
+      </section>
+
+      <!----------------------------------------------------------->
+
+      <form>
+        <h2>Pronto para transformar uma vida?</h2>
+        <p>
+          Junte-se a centenas de famílias que já encontraram seus melhores
+          amigos através do PetAdopt.
+        </p>
+
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Escreva seu nome"
+        />
+
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          name="telefone"
+          id="telefone"
+          placeholder="(xx) xxxx-xxxx"
+        />
+
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="seuemail@exemplo.com"
+        />
+
+        <legend>Animal escolhido:</legend>
+        <input type="radio" id="cachorro" name="pet" />
+        <label for="cachorro">Cachorro</label>
+
+        <input type="radio" id="gato" name="pet" />
+        <label for="gato">Gato</label>
+
+        <label for="animal">Nome do Animal:</label>
+        <input
+          type="text"
+          id="animal"
+          name="animal"
+          placeholder="Escreva o nome do animal que você quer adotar"
+        />
+
+        <button>Comece Sua Jornada</button>
+      </form>
+
+      <!----------------------------------------------------------------->
+
+      <div class="rodape">
+        <img class="logo" src="./assets/Logo.png" alt="Logo PetAdopt" />
+        <p>
+          Nossa missão é conectar pets abandonados com famílias amorosas,
+          transformando vidas através do amor incondicional.
+        </p>
+        <img
+          class="redes"
+          src="./assets/facebook (1).png"
+          alt="logo facebook"
+        />
+        <img class="redes" src="./assets/instagram.png" alt="logo instagram" />
+      </div>
+    </main>
+    <!---------------------------------------------------------------------------->
+    <footer>
+      © 2025 PetAdopt. Desenvolvido com ❤️ para ajudar nossos amigos peludinhos.
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
