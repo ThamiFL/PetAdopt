@@ -23,7 +23,10 @@ header {
     border: none;
     width: 6vw;
     cursor: pointer;
-  }
+    &:hover{
+    background-color: #f7ad78;
+    }
+}
 }
 
 ////////////////////////////////////////////////////////////////
@@ -60,8 +63,8 @@ article {
 .galeria {
   display: flex;
   justify-content: space-evenly;
-}
-
+   border: solid;
+ 
 .pet {
   width: 20%;
   height: 25vh;
@@ -76,12 +79,22 @@ article {
   }
 }
 
-.imgPet {
-  width: 50%;
-  height: 18vh;
-  border-radius: 100%;
-}
+.botaoPet{
+width: 10vw;
+height: 20vh;
+border-radius: 100px;
+border: none;
+cursor: pointer;
+&:hover 
 
+
+.imgPet {
+  width: 100%;
+  height: 20vh;
+  border-radius: 100px;
+}
+}
+}
 /////////////////////////////////////////////////////////////////////////
 
 form {
@@ -115,17 +128,9 @@ form {
     font-weight: 700;
     padding: 0.5rem;
    
-   }
-
-  input {
-    width: 20vw;
-    border-radius: 10px;
-    border: none;
-    padding: 0.5rem;
-    
   }
 
-  legend {
+legend {
     color: #ffffff;
     font-size: 1.3rem;
     font-family: "Inter", sans-serif;
@@ -133,7 +138,18 @@ form {
     padding: 0.5rem;
   }
 
-  button {
+  input {
+    width: 20vw;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+  }
+
+    .cachorrogato {
+    border: #1f2937 solid;
+     }
+
+  .buttonformulario {
     cursor: pointer;
     background-color: #f97415;
     color: #ffffff;
@@ -145,6 +161,9 @@ form {
     border-radius: 10px;
     padding: 1rem;
     margin: 2.5rem;
+     &:hover{
+    background-color: #f7ad78;
+    }
   }
 }
 ///////////////////////////////////////////////////////////////////////////
@@ -161,22 +180,15 @@ form {
 
   p {
     color: #9ca3af;
-    text-align: center;
-    padding: 2rem;
+     padding: 2rem;
     font-family: "Poppins", sans-serif;
   }
-}
- 
 
 .redes {
-   border: #f59f0a solid;
-   display: flex;
-  
-     height: 6vh;
-     margin: 2rem;
-  }
+  border: #f59f0a solid;
+}
 
-
+}
 
 ///////////////////////////////////////////////////////////////////
 
@@ -190,100 +202,62 @@ footer {
   font-weight: 400;
 }
 
+
+
 //////////////////////////////////////////////////////////
 /////////////////        RESPONSIVO      /////////////////
 
 @media (max-width: 500px) {
+  header {
+    height: 15vh;
 
-
-header {
-  height: 15vh;
-
-  .botaoAdote {
-    width: 25vw;
-   height: 8vh;
-   }
-}
-
-////////////////////
-
-article {
-   height: 70vh;
-border: #1f2937 solid;
-
-  .infoPet {
-    width: 40%;
+    .botaoAdote {
+      width: 25vw;
+      height: 8vh;
+    }
   }
 
-  
+  ////////////////////
 
-.galeria {
-border: #f59f0a solid;
-background-color: blue;
-height: 50vh;
-
-
-.pet {
  
 
+
+
+  /////////////////////////
+
+  form {
+    height: 80%;
+
+    h2 {
+      text-align: center;
+    }
+
+    P {
+      display: none;
+    }
+
+    input {
+      width: 80vw;
+    }
+
+    button {
+      width: 50vw;
+      height: 10vh;
+    }
+  }
+  ////////////////////////////////////////////////
+
+  .rodape {
+    p {
+      display: none;
+    }
+  }
+
+  //////////////////////////////////////////////
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  /////////////// END  /////////////////
 }
-
-.imgPet {
- 
-}
-
-}
-
-/////////////////////////
-
-form{
-  height: 80%;
-
-h2{
-   text-align: center;
-}
-
-  P{
-    display: none;
-   }
-
-
-input {
-  width: 80vw;
-}
-
-button {
-  width: 50vw;
-}
-
-}
-////////////////////////////////////////////////
-
-.rodape {
-  
-p {
-  display: none;
-}
-
-}
-
-//////////////////////////////////////////////
- 
-footer {
-  font-size: 0.8rem;
-}
-
-/////////////// END  /////////////////
-
-
-
-
-
-
-
-
-
-
-
-}
-
