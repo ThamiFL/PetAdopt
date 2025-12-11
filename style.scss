@@ -23,10 +23,10 @@ header {
     border: none;
     width: 6vw;
     cursor: pointer;
-    &:hover{
-    background-color: #f7ad78;
+    &:hover {
+      background-color: #f7ad78;
     }
-}
+  }
 }
 
 ////////////////////////////////////////////////////////////////
@@ -63,38 +63,28 @@ article {
 .galeria {
   display: flex;
   justify-content: space-evenly;
-   border: solid;
- 
-.pet {
-  width: 20%;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 
-  .descricaopet,
-  .nome {
-    display: none;
+  .pet {
+    width: 20%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .descricaopet,
+    .nome {
+      display: none;
+    }
+  }
+
+  .imgPet {
+    width: 50%;
+    height: 20vh;
+    border-radius: 100px;
   }
 }
 
-.botaoPet{
-width: 10vw;
-height: 20vh;
-border-radius: 100px;
-border: none;
-cursor: pointer;
-&:hover 
-
-
-.imgPet {
-  width: 100%;
-  height: 20vh;
-  border-radius: 100px;
-}
-}
-}
 /////////////////////////////////////////////////////////////////////////
 
 form {
@@ -122,15 +112,16 @@ form {
   }
 
   label {
+    display: flex;
+    text-align: left;
     color: #ffffff;
     font-size: 1.3rem;
     font-family: "Inter", sans-serif;
     font-weight: 700;
     padding: 0.5rem;
-   
   }
 
-legend {
+  legend {
     color: #ffffff;
     font-size: 1.3rem;
     font-family: "Inter", sans-serif;
@@ -145,9 +136,10 @@ legend {
     padding: 0.5rem;
   }
 
-    .cachorrogato {
+  .cachorrogato {
+    
     border: #1f2937 solid;
-     }
+  }
 
   .buttonformulario {
     cursor: pointer;
@@ -161,8 +153,8 @@ legend {
     border-radius: 10px;
     padding: 1rem;
     margin: 2.5rem;
-     &:hover{
-    background-color: #f7ad78;
+    &:hover {
+      background-color: #f7ad78;
     }
   }
 }
@@ -180,14 +172,17 @@ legend {
 
   p {
     color: #9ca3af;
-     padding: 2rem;
+    padding: 2rem;
     font-family: "Poppins", sans-serif;
   }
 
-.redes {
-  border: #f59f0a solid;
-}
+  .redes {
+    display: flex;
+    margin: 2rem;
+    border: #f59f0a solid;
+    height: 5vh;
 
+  }
 }
 
 ///////////////////////////////////////////////////////////////////
@@ -201,8 +196,6 @@ footer {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-
-
 
 //////////////////////////////////////////////////////////
 /////////////////        RESPONSIVO      /////////////////
@@ -219,9 +212,30 @@ footer {
 
   ////////////////////
 
- 
+  article {
+    display: flex;
+    justify-items: center;
+    flex-direction: column-reverse;
+    background-color: darksalmon;
+    height: 80vh;
 
+    .infoPet {
+      width: 100vw;
+      margin: 1rem;
+    }
 
+    .fotoGrande {
+      height: 80vh;
+    }
+  }
+
+  .galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50vh;
+    background-color: cadetblue;
+  }
 
   /////////////////////////
 
@@ -240,7 +254,7 @@ footer {
       width: 80vw;
     }
 
-    button {
+    .buttonformulario {
       width: 50vw;
       height: 10vh;
     }
@@ -258,6 +272,4 @@ footer {
   footer {
     font-size: 0.8rem;
   }
-
-  /////////////// END  /////////////////
 }

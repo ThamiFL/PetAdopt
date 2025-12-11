@@ -56,7 +56,6 @@ article #fotoGrande {
 .galeria {
   display: flex;
   justify-content: space-evenly;
-  border: solid;
 }
 .galeria .pet {
   width: 20%;
@@ -70,15 +69,8 @@ article #fotoGrande {
 .galeria .pet .nome {
   display: none;
 }
-.galeria .botaoPet {
-  width: 10vw;
-  height: 20vh;
-  border-radius: 100px;
-  border: none;
-  cursor: pointer;
-}
-.galeria .botaoPet:hover .imgPet {
-  width: 100%;
+.galeria .imgPet {
+  width: 50%;
   height: 20vh;
   border-radius: 100px;
 }
@@ -106,6 +98,8 @@ form p {
   font-weight: 500;
 }
 form label {
+  display: flex;
+  text-align: left;
   color: #ffffff;
   font-size: 1.3rem;
   font-family: "Inter", sans-serif;
@@ -160,7 +154,10 @@ form .buttonformulario:hover {
   font-family: "Poppins", sans-serif;
 }
 .rodape .redes {
+  display: flex;
+  margin: 2rem;
   border: #f59f0a solid;
+  height: 5vh;
 }
 
 footer {
@@ -181,6 +178,27 @@ footer {
     width: 25vw;
     height: 8vh;
   }
+  article {
+    display: flex;
+    justify-items: center;
+    flex-direction: column-reverse;
+    background-color: darksalmon;
+    height: 80vh;
+  }
+  article .infoPet {
+    width: 100vw;
+    margin: 1rem;
+  }
+  article .fotoGrande {
+    height: 80vh;
+  }
+  .galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50vh;
+    background-color: cadetblue;
+  }
   form {
     height: 80%;
   }
@@ -193,7 +211,7 @@ footer {
   form input {
     width: 80vw;
   }
-  form button {
+  form .buttonformulario {
     width: 50vw;
     height: 10vh;
   }
